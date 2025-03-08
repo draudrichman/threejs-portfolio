@@ -162,7 +162,7 @@
   }
 } */
 
-/* .waving-hand {
+.waving-hand {
   animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
@@ -204,4 +204,4 @@
   100% {
     transform: rotate(0deg);
   }
-} */
+}
