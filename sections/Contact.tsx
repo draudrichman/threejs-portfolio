@@ -66,7 +66,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="sm:px-10 px-5 my-20">
+        <section className="sm:px-10 px-5 my-20" id="contact">
             {alert.show && <Alert {...alert} />}
             <div className="relative min-h-screen flex items-center justify-center flex-col">
                 <Image
