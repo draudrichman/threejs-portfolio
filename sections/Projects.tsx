@@ -63,7 +63,7 @@ const Projects = () => {
                     <div className="flex items-center justify-between flex-wrap gap-5">
                         <div className="flex items-center gap-3">
                             {currentProject.tags.map((tag, index) => (
-                                <div key={index} className="w-10 h-10 rounded-md p-2 bg-neutral-800 backdrop-filter backdrop-blur-lg flex justify-center items-center">
+                                <div key={index} className="w-10 h-10 rounded-md p-2 bg-neutral-100/10 backdrop-filter backdrop-blur-lg flex justify-center items-center">
                                     <Image
                                         src={tag.path}
                                         alt={tag.name}
