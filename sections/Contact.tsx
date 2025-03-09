@@ -27,16 +27,16 @@ const Contact = () => {
         setLoading(true);
 
         emailjs.send(
-            'service_bbtktee',
-            'template_lo7uh6q',
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
             {
                 from_name: form.name,
-                to_name: 'JavaScript Mastery',
+                to_name: 'AUD Richman',
                 from_email: form.email,
-                to_email: 'sujata@jsmastery.pro',
+                to_email: 'richman@aud.com',
                 message: form.message,
             },
-            'vVHMUSunhoJ71tBYs'
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
         ).then(
             () => {
                 setLoading(false);
