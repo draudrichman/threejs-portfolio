@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 "use client";
 
 import Button from "@/components/Button";
 import CanvasLoader from "@/components/CanvasLoader";
-import Cube from "@/components/Cube";
+// import Cube from "@/components/Cube";
 import HackerRoom from "@/components/HackerRoom";
 import HeroCamera from "@/components/HeroCamera";
-import ReactLogo from "@/components/ReactLogo";
-import Rings from "@/components/Rings";
-import Target from "@/components/Target";
+// import ReactLogo from "@/components/ReactLogo";
+// import Rings from "@/components/Rings";
+// import Target from "@/components/Target";
 import { calculateSizes } from "@/constants";
 import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -41,7 +42,7 @@ const Hero = () => {
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
             <HeroCamera isMobile={isMobile}>
               <HackerRoom
-                // @ts-ignore
+                // @ts-expect-error
                 scale={sizes.deskScale}
                 // @ts-ignore
                 position={sizes.deskPosition}
@@ -71,7 +72,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 sm:px-10 px-5">
-        <Link href="#contact">
+        <Link href="#about">
           <Button
             name="Let's work together"
             isBeam
